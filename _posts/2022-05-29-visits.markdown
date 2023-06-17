@@ -1,0 +1,55 @@
+---
+layout: post
+title: Visits
+date: '2022-05-29'
+permalink: /visits/
+---
+
+Visits is a fullstack serverless application that connects companies offering industrial visits with students seeking them. The app provides seamless magic link authentication. The user can list or book visits after they have signed in. I have worked on both the design and development of the project from scratch.
+
+Visits is created with Next.js, JavaScript, PostgreSQL, Supabase, Prisma, Tailwind CSS and Stripe.
+
+[App](https://visits.vercel.app/)  
+[Source Code](https://github.com/alabhyajindal/visits)
+
+![A list of visits](/assets/visits/screen6.png)
+
+## Purpose
+
+I created Visits because I wanted to solve the problem I faced myself when I was in college. Right now there exists no platform where students can look up companies offering industrial visits and book them. The current process involves arranging industrial visits based on personal connections. This is not the right way, everyone should be aware of companies offering visits and be able to book it seamlessly.
+
+![Homepage](/assets/visits/screen0.png)
+
+![Homepage](/assets/visits/screen1.png)
+
+![Login modal](/assets/visits/screen3.png)
+
+![One time login link sent on email](/assets/visits/screen4.png)
+
+![User registration](/assets/visits/screen5.png)
+
+![Form for listing visits](/assets/visits/screen8.png)
+
+![Supabase dashboard](/assets/visits/screen2.png)
+
+## Spotlight
+
+Allowing users to create visits and update the Explore page immediately was the hardest part of the application. Here's how I did it.
+
+The details of the cards on the Explore page are being fetched from a PostgreSQL database hosted on Supabase. I'm using the `getServerSideProps` function provided by Next.js to fetch the data from the database on the Server and pass it to the component rendering the cards. Fetching the data on the server like this results in a fast user experience compared to client-side data fetching (done using `useEffect`, for example).
+
+I'm making use of dynamic routing for all the visits listed on the platform. This is done by using the square bracket notation provided by Next.js. Finally, I'm using getStaticProps to pass in the data to the component with the matching `id` and `getStaticPaths` to tell Next.js which routes to statically generate during build time. Incremental Static Regeneration is enabled by setting `fallback: blocking` in the `getStaticPaths` function.
+
+![Mercedes Benz visits page](/assets/visits/screen7.png)
+
+## Current Status
+
+I started this project with the aim of having it being used by actual users. After a couple of interactions with a few companies I have realized that this is not much of a problem. Also, there are lots of improvements needed in the app, especially in user onboarding and the process of listing and booking visits. However, I'm not focusing on this project right now and I'm working on other exciting things.
+
+## What I learned
+
+This project helped me develop a great understanding about combining different technologies together to deliver a great UX. I learned to use Supabase Auth, which is easier to set up and use than alternatives like NextAuth.js. I experienced how using a BaaS like Supabase drastically reduces development time.
+
+I learned to model data using Prisma which allows for faster iterations. Working on this project has also improved my design skills as I researched quite a bit on how the different pages for the website should look and then designed everything from scratch.
+
+I also realized that it's bad to build a user centric app without talking to users first. In the future, when I execute on one of my ideas I will talk to users first to understand if they actually face the problem before building out the solution.
