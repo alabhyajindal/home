@@ -10,7 +10,7 @@ permalink: /about/
 
 <img src='/assets/about/profile.jpg' height='250px' width='250px' style='border-radius:2px;'>
 
-I'm a sofware engineer.
+I'm a software engineer.
 
 I enjoy learning things I am curious about, both technical and non-technical, listening to music and drinking coffee.
 
