@@ -4,15 +4,30 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+<!-- ![Alabhya Jindal](/assets/about/profile.jpg) -->
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+<!-- ![Alabhya Jindal](/assets/about/profile_small.jpg) -->
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+<img src='/assets/about/profile.jpg' height='250px' width='250px' style='border-radius:2px;'>
 
+I'm a sofware engineer.
 
-[jekyll-organization]: https://github.com/jekyll
+I enjoy learning things I am curious about, both technical and non-technical, listening to music and drinking coffee.
+
+Some of my favorite movies:
+
+- The Witch
+- La La Land
+- Ex Machina
+- Mulholland Drive
+
+Few of my favorite songs:
+
+- Strobe by deadmau5
+- Black & Chinese by Huncho Jack
+- Tightrope by ZAYN
+- Here by Sasha Alex Sloan
+
+I love memes I love memes!!!!
+
+![City of Syrup](/assets/about/peter.png)
