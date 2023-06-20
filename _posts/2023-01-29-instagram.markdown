@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Instagram is Digital Opium
+title: Instagram is digital opium
 date: '2023-01-29'
 permalink: /instagram
 ---

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Are you a Software Engineer or a Framework Implementor?
+title: Are you a software engineer or a framework implementor?
 date: 2023-06-14
 permalink: /frameworks
 ---
