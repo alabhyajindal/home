@@ -25,7 +25,7 @@ I don't know why anyone would spend time to make their life look interesting ins
 Instagram causes us to look at our life from the lens of the camera.
 Will this look good on my story?
 Should I post this?
-I know people who make their life decisions based on what looks good on their feed.
+Some people make their life decisions based on what looks good on their feed.
 
 I have deactivated my account on multiple occasions thinking I don't need it for maintaining contact with people.
 But it doesn't work.
