@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-permalink: /about/
+permalink: /about
 ---
 
 <!-- ![Alabhya Jindal](/assets/about/profile.jpg) -->

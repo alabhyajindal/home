@@ -2,7 +2,7 @@
 layout: post
 title: Are you a Software Engineer or a Framework Implementor?
 date: 2023-06-14
-permalink: /frameworks/
+permalink: /frameworks
 ---
 
 A Framework Implementor is a person who relies excessively on a framework for their projects. It’s working with a framework day in day out, restricted by the APIs and features exposed by the framework. They have a high-resistance to alternative methods of achieving the same goal and are generally dismissive of them.

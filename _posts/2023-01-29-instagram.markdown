@@ -2,7 +2,7 @@
 layout: post
 title: Instagram is Digital Opium
 date: '2023-01-29'
-permalink: /instagram/
+permalink: /instagram
 ---
 
 Instagram is the worst social media platform I have ever used - and I have used LinkedIn.

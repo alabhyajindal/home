@@ -2,7 +2,7 @@
 layout: post
 title: 'Goodbye Goodreads'
 date: 2022-11-18
-permalink: /goodreads/
+permalink: /goodreads
 ---
 
 Goodreads is a wonderful community of book readers and great for maintaining your book updates. But I'm starting to see a problem using it.

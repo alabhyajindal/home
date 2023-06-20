@@ -2,7 +2,7 @@
 layout: post
 title: Search Select
 date: '2022-04-15'
-permalink: /search-select/
+permalink: /search-select
 ---
 
 Search Select is a lightweight browser extension available for Chrome that allows users to select and view search results quickly with shortcuts.

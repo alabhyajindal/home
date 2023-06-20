@@ -2,7 +2,7 @@
 layout: post
 title: Visits
 date: '2022-05-29'
-permalink: /visits/
+permalink: /visits
 ---
 
 Visits is a fullstack serverless application that connects companies offering industrial visits with students seeking them. The app provides seamless magic link authentication. The user can list or book visits after they have signed in. I have worked on both the design and development of the project from scratch.

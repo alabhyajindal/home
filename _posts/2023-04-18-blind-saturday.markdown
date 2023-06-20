@@ -2,7 +2,7 @@
 layout: post
 title: Blind Saturday
 date: '2023-04-18'
-permalink: /blind-saturday/
+permalink: /blind-saturday
 ---
 
 ### tldr
