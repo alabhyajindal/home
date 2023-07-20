@@ -28,6 +28,4 @@ Few of my favorite songs:
 - Tightrope by ZAYN
 - Here by Sasha Alex Sloan
 
-I love memes I love memes!!!!
-
 ![City of Syrup](/assets/about/peter.png)
