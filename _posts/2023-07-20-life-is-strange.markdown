@@ -21,4 +21,8 @@ It was so nice seeing Max making small talk with the various characters. The fis
 
 Thank you to everyone who worked on this game for producing this work of art.
 
-<img src='../assets/life-is-strange/life-is-strange.jpg' height='500px' width='500px'>
+<img src='../assets/life-is-strange/life-is-strange.jpg' height='500px' width='500px' 
+style="object-fit: cover
+max-width: 100%;
+height: auto;
+">
