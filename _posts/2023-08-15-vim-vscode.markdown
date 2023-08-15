@@ -5,9 +5,9 @@ date: 2023-08-15
 permalink: /vim-vscode
 ---
 
-I learned Vim 3 weeks ago. Since then I am using the Vim emulator in VS Code for programming. I also started using Obsidian because I wanted to practice Vim for writing prose as well.
+I learned Vim 3 weeks ago. Since then I have been using the Vim emulator in VS Code for programming. I also started using Obsidian because I wanted to practice Vim for writing prose as well.
 
-I first learned about Vim about 2 years ago but didn't pay any attention it. I thought people using it learned it before modern IDEs are were just resistant to change.
+I first learned about Vim about 2 years ago but didn't pay any attention to it. I thought people using it learned it before modern IDEs and were resistant to change.
 
 I still don't think it's a good idea to use Vim as a full-blown IDE. Vim motions, however, are pretty cool and very helpful during programming.
 
@@ -19,7 +19,7 @@ Learn Vim using `vimtutor`. It's the best way to learn Vim. The exercises are to
 
 ### Escape Key
 
-Remap the `Caps Lock` key on your keyboard to `Ctrl`. The Ctrl key is used frequenly in Vim and also in other applications. You could easily switch from Insert to Normal Mode using `Ctrl + [` shortcut, instead of pressing the `Esc` which is harder to reach.
+Remap the `Caps Lock` key on your keyboard to `Ctrl`. This will allow you to easily switch from Insert to Normal Mode using `Ctrl + [` shortcut, instead of pressing the `Esc` which is harder to reach.
 
 ### VS Code Settings
 
