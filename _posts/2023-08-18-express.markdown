@@ -7,11 +7,11 @@ permalink: /express
 
 I have been working on a web app for the past month or so. It's a travel logger, where you can enter the places you have been to, and the app visualizes them on a globe.
 
-I was no longer enjoying working on the project and decided to stop working yesterday. And I think it majorly because I chose the wrong framework for the project - [Express](https://expressjs.com/).
+I was no longer enjoying working on the project and decided to stop working yesterday. My interest dwindled because I chose the wrong framework for this project - [Express](https://expressjs.com/).
 
 The app's idea was straightforward - people would register, log in, choose a username and then add a list of places they have visited in chronological order. The app would visualize them on a globe, connected by lines to indicate the travel.
 
-![Screenshot of a person's trave logs](../assets/express/travel-log.png)
+![Screenshot of a person's travel logs](../assets/express/travel-log.png)
 
 ### Implementation details and struggles
 
@@ -23,7 +23,7 @@ I found an amazing [video](https://www.youtube.com/watch?v=j8Yxff6L_po) by [Rand
 
 ### Express Sound Effect #2
 
-I completed the actual travel logging part of the app in 2 days. But I couldn't even complete the auth and database in 2 weeks. I spent a lot of time making lots of small decisions. I don't think I'll use Express for my personal projects going forward.
+I completed the actual travel logging part of the app in 2 days. But I couldn't even complete the auth and database in 2 weeks. I spent a lot of time making lots of small decisions.
 
 I don't have any conclusion. All I know is I'm not using Express or any other unopinionated framework when working solo.
 
