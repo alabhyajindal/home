@@ -1,17 +1,31 @@
 ---
 layout: post
-title: The Express experience
+title: Don't fly solo with Express
 date: 2023-08-18
 permalink: /express
 ---
 
-I have been working on a web app using Express for the past month or so. It was supposed to be travel logger, where you can enter the cities and towns you have been to, and the app visualizes those places on a globe.
+I have been working on a web app for the past month or so. It's a travel logger, where you can enter the places you have been to, and the app visualizes them on a globe.
 
-I was working on it because I would love to have something like this. And also because I wanted to get better at Express. At the beginning of the project I told myself that I would use this project as a facade for learning Express, and the project is not to be rushed in order to "launch" it.
+I was no longer enjoying working on the project and decided to stop working yesterday. And I think it majorly because I chose the wrong framework for the project - [Express](https://expressjs.com/).
 
-Yesterday evening I lost all desire to continue working on the project. I thought I had completed the project but then remembered that I had yet to implement email verification and password reset functionality. And then I lost any desire to continue working on the project. It's not anything about the remaining two features. I stopped because I got frustrated that the project still needs something to be done in spite of working so long on this.
+The app's idea was straightforward - people would register, log in, choose a username and then add a list of places they have visited in chronological order. The app would visualize them on a globe, connected by lines to indicate the travel.
 
-I know that this is my fault. There is nothing wrong with Node.js or Express here. I know. The problem I have with making apps in Express is the plumbing. I don't want to install and then glue 20 NPM libraries. It's uninteresting and not elegant. This is what my `package.json` looks like, for this incomplete, not ready, abandoned app:
+![Screenshot of a person's trave logs](../assets/express/travel-log.png)
+
+### Implementation details and struggles
+
+I first used a Postgres database hosted on [Supabase](https://supabase.com/). [Mapbox](https://www.mapbox.com/), the service I was using for geographical data visualization, stores its data in [GeoJSON](https://geojson.org/). I used the [JSONB](https://www.postgresql.org/docs/current/datatype-json.html) data type to store this information.
+
+I was working to add auth at this time using [Google Identity](https://developers.google.com/identity/gsi/web/guides/overview). Getting this to work was not enjoyable because I didn't find good documentation. After struggling for a few days, I decided to go ahead and implement a simple auth system myself.
+
+I found an amazing [video](https://www.youtube.com/watch?v=j8Yxff6L_po) by [Randall Degges](https://www.rdegges.com/) which helped me a lot. I switched out the database from Postgres to MongoDB to follow the guide easily.
+
+### Express Sound Effect #2
+
+I completed the actual travel logging part of the app in 2 days. But I couldn't even complete the auth and database in 2 weeks. I spent a lot of time making lots of small decisions. I don't think I'll use Express for my personal projects going forward.
+
+I don't have any conclusion. All I know is I'm not using Express or any other unopinionated framework when working solo.
 
 ```json
 {
@@ -48,45 +62,3 @@ I know that this is my fault. There is nothing wrong with Node.js or Express her
   }
 }
 ```
-
-### About the app
-
-I was using the placeholder name of Travel Log while working on the project. The idea was people would log in, choose a username and then add a list of cities/towns they have visited in chronological order and the app would visualize them on a globe, connected by lines to indicate their travel.
-
-I was using Mapbox for the globe.
-
-I would much rather have something opinionated that has one way of doing common tasks. The amount of decisions a simple Express app requires is baffling. Here are all the decisions I made (and remade):
-
-### Database
-
-I first used a Postgres database hosted on Supabase. Mapbox stores geographical data in Geojson format which is like JSON. I used the JSONB type of Postgres to store this information.
-
-I didn't like using Postgres in Node.js however. Maybe I didn't understand it well and went about using it the wrong way. But I didn't like writing SQL inside Node.js. It didn't help that I realized I was not liking it after I completed CRUD.
-
-I then switched to using MongoDB - using the official MongoDB driver (this is the important part). For the life of me I couldn't figure out how to connect the server to the database. Am I supposed to open a connection everytime I want to communicate? Can I create a helper and export that, then use it everywhere? I didn't get definitive answers. I switched back to Postgres.
-
-I made some Auth changes (more on that later) and then decided to change to MongoDB again. This time using Mongoose.
-
-I really enjoyed using Mongoose. Connecting to the database was a one-liner. Query methods were straightforward and MongoDB itself was a joy to use.
-
-### Authentication
-
-I underestimated how painful it would be to get auth to work in Node.js.
-
-I first used Google OAuth and added a Continue with Google button. Adding the button was easy enough. But getting that to work completely using JWT was too much. I did't find documentation about what I even needed to do. I then decided to create a simple auth system myself, thanks to this amazing video by Rendall Degges. The video is also why I decided to move to MongoDB a second time using Mongoose.
-
-I didn't hate making auth work using MongoDB and Bcrypt password hashing. I enjoyed the password hashing parts. But the point when I reached email verification confirmation, I felt like I now have good understanding of Express. And also how it feels to work on an Express application. So I decided to stop spending my time on the project.
-
-In the one month that I spend working on this project. 25 days were spent trying to make auth work. I completed the actual "product" part of the app in 2 days. I don't think I'll use Express for my personal projects going forward. I don't want to spend time working on anything that the actual problem when I'm working on my side projects.
-
-### View in MVC
-
-I first created a HTML file, read it into memory and then served it. I then started using Pug templates. I really liked Pug.
-
-### Is Express bad?
-
-Express is not bad. It's just unopionionated and not batteries included. For many people and companies this might be a plus as they can choose exactly how they want to do everything. But this is not good for a solo developer. I don't have bandwith to decide the password hashing library to choose. I don't want to think about those things when I'm making a web application.
-
-### What's the better way
-
-This turmoil got me thinking that there has to be a better way to write web application. Working on this Express app was joyless. I want to feel good when working. I think what I need is a batteries included web framework that does all the common tasks of web apps.
